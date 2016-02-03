@@ -1,0 +1,44 @@
+{
+  "name": "cast-buffer",
+  "version": "1.0.0",
+  "description": "cast objects, arrays, and strings to buffers",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "lab --verbose --assert code --threshold 100",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjmehta/cast-buffer.git"
+  },
+  "keywords": [
+    "cast",
+    "buffer",
+    "string",
+    "array",
+    "object",
+    "to",
+    "buffers",
+    "objects",
+    "arrays",
+    "json"
+  ],
+  "author": "Tejesh Mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjmehta/cast-buffer/issues"
+  },
+  "homepage": "https://github.com/tjmehta/cast-buffer",
+  "devDependencies": {
+    "code": "^1.5.0",
+    "lab": "^5.18.1",
+    "standard": "^5.4.1"
+  },
+  "dependencies": {
+    "101": "^1.2.0",
+    "assert-args": "^1.0.5"
+  }
+}

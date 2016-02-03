@@ -1,6 +1,6 @@
 {
   "name": "cast-buffer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "cast objects, arrays, and strings to buffers",
   "main": "index.js",
   "scripts": {

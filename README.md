@@ -1,5 +1,5 @@
 # cast-buffer
-cast strings, arrays, and objects to buffer
+cast strings, arrays, and objects to buffers
 
 # Installation
 ```bash

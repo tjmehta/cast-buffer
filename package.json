@@ -1,7 +1,7 @@
 {
   "name": "cast-buffer",
   "version": "1.0.0",
-  "description": "cast objects, arrays, and strings to buffers",
+  "description": "cast objects, arrays, numbers, and strings to buffers",
   "main": "index.js",
   "scripts": {
     "test": "lab --verbose --assert code --threshold 100",

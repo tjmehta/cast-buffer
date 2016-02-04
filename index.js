@@ -1,7 +1,6 @@
 'use strict'
 
 var assertArgs = require('assert-args')
-var get = require('101/pluck')
 var isObject = require('101/is-object')
 var toJSON = function (val) {
   return (val && val.toJSON) ? val.toJSON() : val
@@ -20,7 +19,7 @@ function castBuffer (val) {
 
   val = toJSON(val)
   var args = assertArgs([val], {
-    val: ['string', 'array', 'object']
+    val: ['string', 'array', 'object', 'number']
   })
   val = args.val
 
@@ -32,8 +31,8 @@ function castBuffer (val) {
   } else if (isObject(val)) {
     val = toJSON(val)
     str = JSON.stringify(val)
-  } else { // val is a string
-    str = val
+  } else { // val is a string or number
+    str = val + ''
   }
 
   return new Buffer(str)

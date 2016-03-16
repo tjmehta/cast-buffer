@@ -9,7 +9,7 @@ var toJSON = function (val) {
 module.exports = castBuffer
 /**
  * cast value to buffer
- * @param  {Buffer|Object|Array|String} val value to be casted
+ * @param  {Buffer|Object|Array|String|Boolean} val value to be casted
  * @return {Buffer}     value as a Buffer
  */
 function castBuffer (val) {
@@ -19,7 +19,7 @@ function castBuffer (val) {
 
   val = toJSON(val)
   var args = assertArgs([val], {
-    val: ['string', 'array', 'object', 'number']
+    val: ['string', 'array', 'object', 'number', 'boolean']
   })
   val = args.val
 
@@ -31,7 +31,7 @@ function castBuffer (val) {
   } else if (isObject(val)) {
     val = toJSON(val)
     str = JSON.stringify(val)
-  } else { // val is a string or number
+  } else { // val is a string, number, or boolean
     str = val + ''
   }
 

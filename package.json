@@ -1,6 +1,6 @@
 {
   "name": "cast-buffer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "cast objects, arrays, numbers strings and booleans to buffers",
   "main": "index.js",
   "scripts": {

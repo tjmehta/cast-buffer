@@ -51,6 +51,13 @@ describe('castBuffer', function () {
     done()
   })
 
+  it('should cast a boolean to a buffer', function (done) {
+    var val = true
+    var expected = new Buffer(val + '')
+    expect(castBuffer(val)).to.deep.equal(expected)
+    done()
+  })
+
   it('should toJSON if value has it', function (done) {
     var val = {
       toJSON: function () {

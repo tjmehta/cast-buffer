@@ -1,5 +1,5 @@
 # cast-buffer [![Build Status](https://travis-ci.org/tjmehta/cast-buffer.svg?branch=master)](https://travis-ci.org/tjmehta/cast-buffer)
-cast objects, arrays, numbers, and strings to buffers
+cast objects, arrays, numbers, strings and booleans to buffers
 
 # Installation
 ```bash
@@ -15,6 +15,7 @@ buff = castBuffer([ 'foo', 'bar', 'qux' ]) // new Buffer('[ 'foo', 'bar', 'qux' 
 buff = castBuffer('hello') // new Buffer('hello')
 buff = castBuffer(10) // new Buffer('10') // stringified number
 buff = castBuffer(1.1) // new Buffer('1.1') // stringified number
+buff = castBuffer(true) // new Buffer('true') // stringified boolean
 buff = castBuffer(new Buffer('hello')) // returns same buffer
 
 // Calls toJSON if it exists
